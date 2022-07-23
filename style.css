@@ -161,7 +161,6 @@ body::after {
   }
 }
 
-
 .latitude-input {
   text-align: center;
   min-width: 50%;
@@ -278,7 +277,7 @@ body::after {
   cursor: pointer;
   min-width: 40%;
   padding: 1rem 3rem;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .btn:hover {
@@ -286,7 +285,7 @@ body::after {
 }
 
 .btn:active {
-  transform: translateY(2px)
+  transform: translateY(2px);
 }
 
 @media screen and (max-width: 480px) {
@@ -372,9 +371,9 @@ body::after {
 @media screen and (max-width: 480px) {
   .messages {
     line-height: 2.6rem;
-    width: 70%; 
+    width: 70%;
     padding: 0 1rem;
-    
+
     text-align: center;
     margin-top: 1rem;
     position: absolute;
@@ -393,6 +392,7 @@ body::after {
   flex-flow: column;
   align-items: center;
   position: relative;
+  min-height: 90vh;
 }
 
 .countries {
@@ -415,7 +415,7 @@ body::after {
 
 .countries-section {
   height: 100%;
-  transition: all .2;
+  transition: all 0.2;
 }
 
 .country {
