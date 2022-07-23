@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      type="img/png"
+      href="../CountryFinder 2.0/img/flag.svg"
+    />
+    <script defer src="script.js"></script>
+    <title>CountryFinder</title>
+  </head>
+  <body class="image">
+    <main class="container" id="countries-container">
+      <header class="header">
+        <h1 class="title">Where Am I?</h1>
+        <h4 class="subtitle">
+          select random coordinates and find out which country you are in,
+          including its neighbors
+        </h4>
+      </header>
+
+      <section class="interface">
+        <div class="interface-left">
+          <div class="input-row--latitude">
+            <label class="input-row--label latitude-label" for="name"
+              >Latitude</label
+            >
+            <input
+              type="number"
+              size="10"
+              name="latitude"
+              onfocus="this.placeholder = ''"
+              placeholder="latitude"
+              class="latitude-input"
+              min="-90"
+              max="90"
+            />
+            <p class="input-description latitude-description">
+              Number between -90 and 90.
+            </p>
+          </div>
+          <div class="input-row--longitude">
+            <label class="input-row--label longitude-label" for="name"
+              >Longitude</label
+            >
+            <input
+              type="number"
+              size="10"
+              onfocus="this.placeholder = ''"
+              name="longitude"
+              placeholder="longitude"
+              class="longitude-input"
+              min="-180"
+              max="180"
+            />
+            <p class="input-description longitude-description">
+              Number between -180 and 180.
+            </p>
+            <button class="btn btn-country">Find</button>
+          </div>
+        </div>
+        <!-- <div class="no-county">
+            <p class="no-country--message">There is no country at these coordinates. Please try again.</p>
+          </div> -->
+
+        <div class="interface-right">
+          <button class="btn btn-random">Random</button>
+          <button class="btn btn-local">Local</button>
+          <button class="btn btn-reset">Reset</button>
+        </div>
+
+        <div class="interface-messages">
+          <div class="messages"></div>
+          <h3 class="country-name" id="country-name"></h3>
+        </div>
+      </section>
+      <div class="countries">
+        <!--
+        <article class="country">
+          <img class="country__img" src="" />
+          <div class="country__data">
+            <h3 class="country__name">COUNTRY</h3>
+            <h4 class="country__region">REGION</h4>
+            <p class="country__row"><span>👫</span>POP people</p>
+            <p class="country__row"><span>🗣️</span>LANG</p>
+            <p class="country__row"><span>💰</span>CUR</p>
+          </div>
+        </article>
+        -->
+      </div>
+      <div class="countries-section" id="countries-section"></div>
+      <!-- <div class="btn-row">
+        <button class="btn-country">Where am I?</button>
+        <button class="btn-country btn-reset">Reset</button>
+      </div> -->
+
+      <p class="copyright-text">
+        <span class="copyright-symbol">&copy</span>2021 Designed by Tomas
+        Krajcovic . Based on a design by Jonas Schmedtman from
+        <a
+          class="copyright-link"
+          href="https://www.udemy.com/course/the-complete-javascript-course/"
+          target="_blank"
+          >The Complete JavaScript Course</a
+        >
+      </p>
+    </main>
+  </body>
+</html>
